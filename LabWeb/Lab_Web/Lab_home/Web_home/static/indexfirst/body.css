@@ -1,0 +1,82 @@
+.allbody{
+    width:138.3vh;
+    margin-left:25vh;
+    height:75vh;
+    padding-top:1vh;
+    background-color:#D2691E
+}
+.xian{
+    height:1vh:
+    width:138.3vh;
+
+}
+.xian1{
+    height:4px;
+    width:138.3vh;
+    margin-top:0.3vh;
+    background-color:red;
+}
+.body1{
+    width:65vh;
+    height:28vh;
+    border:2px solid yellow;
+    border-radius:25px ;
+    margin-top:1vh;
+    margin-left:1.5vh;
+    background-color:yellow;
+    display:inline-block;
+}
+.body2{
+    width:65vh;
+    height:28vh;
+    margin-top:1vh;
+    margin-left:5vh;
+    background-color:yellow;
+    display:inline-block;
+    border:2px solid yellow;
+    border-radius:25px ;
+}
+.xiankuang{
+    height:3vh:
+    width:138.3vh;
+    margin-top:1vh;
+}
+.xian2{
+    height:2px;
+    width:100vh;
+    margin-top:2px;
+    background-color:red;
+}
+
+.body3{
+    width:65vh;
+    height:35vh;
+    margin-top:1vh;
+    margin-left:1.5vh;
+    border:2px solid yellow;
+    border-radius:25px ;
+    background-color:yellow;
+    display:inline-block;
+}
+.bodykuang{
+    width:65vh;
+    height:35vh;
+    margin-top:1vh;
+    margin-left:5vh;
+    display:inline-block;
+}
+.body4{
+    width:65vh;
+    height:16vh;
+    border:2px solid yellow;
+    border-radius:25px ;
+    background-color:yellow;
+}
+.body5{
+    width:65vh;
+    height:16vh;
+    margin-top:3vh;
+    border:2px solid yellow;
+    border-radius:25px;
+    background-color:yellow;
+}
