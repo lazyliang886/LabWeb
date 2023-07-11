@@ -1,0 +1,153 @@
+.allbody2{
+    width:138.3vh;
+    margin-left:25vh;
+    height:195vh;
+    padding-top:1vh;
+    background-color:#D2691E
+}
+.xian{
+    height:1vh:
+    width:138.3vh;
+
+}
+.xian1{
+    height:4px;
+    width:138.3vh;
+    margin-top:0.3vh;
+    background-color:red;
+}
+.body1{
+    width:30vh;
+    height:63vh;
+    margin-top:1vh;
+    padding-top: 2vh;
+    display:inline-block;
+}
+.smallbody11{
+    width: 30vh;
+    height: 5vh;
+    background-color: pink;
+}
+.smallbody12{
+    width: 30vh;
+    height:56vh;
+    margin-top:2vh;
+    background-color: pink;
+}
+.body2{
+    width:101.8vh;
+    height:67vh;
+    display:inline-block;
+    margin-left: 6vh;
+
+}
+.smallbody21{
+    width: 101.8vh;
+    height:8vh;
+    padding-top:2vh;
+
+}
+.smallbody211{
+    width:20vh;
+    height:4vh;
+    float:right;
+    background-color:#A6FFFF;
+}
+.smallbody22{
+    width: 101.8vh;
+    height:8vh;
+}
+.smallbody22xiu{
+    width: 101.8vh;
+    height:8vh;
+    margin-top:1vh;
+}
+.smallbody22xiu1{
+    width: 101.8vh;
+    height:8vh;
+    margin-top:2vh;
+}
+.smallbody221{
+    width:40vh;
+    height:6vh;
+}
+.smallbody2211{
+    width:7vh;
+    height:6vh;
+    float:left;
+    background-color:blue;
+}
+.smallbody2212{
+    width:30vh;
+    height:6vh;
+    float:right;
+    background-color: pink;
+}
+.smallbody222{
+    width:40vh;
+    height:4px;
+    margin-top:2px;
+    background-color:red;
+
+}
+.smallbody223{
+    width:25vh;
+    height:2px;
+    margin-top:1vh;
+    background-color:red;
+}
+.smallbody23{
+    width:101.8vh;
+    height:20vh;
+    padding-top:1vh;
+}
+.smallbody231{
+    width:95vh;
+    height:20vh;
+    border:2px solid yellow;
+    border-radius:25px ;
+    background-color:yellow;
+}
+.body3{
+    margin-top:-25vh;
+    width:101.8vh;
+    height:149vh;
+    float:right;
+    padding-top:3vh;
+    background-color: #8A2BE2;
+}
+.body31{
+    margin-top:1vh;
+    width:20vh;
+    height:28vh;
+}
+.body311{
+    width:20vh;
+    height:20vh;
+    border-radius:100px ;
+    border:1px solid pink;
+    background-color:pink;
+}
+.body312{
+    width:20vh;
+    height:7vh;
+    border:1px solid pink;
+    background-color:pink;
+}
+.body4{
+    width:101.8vh;
+    height:28vh;
+    display:flex;
+    flex-direction:row;
+}
+.body41{
+    margin-top:1vh;
+    width:20vh;
+    height:28vh;
+}
+.body42{
+    margin-top:1vh;
+    margin-left:7vh;
+    width:20vh;
+    height:28vh;
+}
