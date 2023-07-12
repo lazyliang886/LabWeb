@@ -2,25 +2,21 @@
     width:190vh;
     height: 15vh;
     font-size: 12px;
-    background-color: #8A2BE2
 }
 .tou1{
-    height: 8vh;
+    height: 14vh;
     width:140vh;
     margin-left:25vh;
-    background-color: #CA8EFF
 }
 .tou2{
     height: 6vh;
     width:140vh;
-    margin-left:25vh;
     padding-top: 1vh;
-    background-color: #FF95CA
+    background-color: #3594B9
 }
 .tou3{
     height: 5vh;
     width: 12vh;
     display: inline-block;
     margin-left: 6.5vh;
-    background-color: #A6FFFF
 }

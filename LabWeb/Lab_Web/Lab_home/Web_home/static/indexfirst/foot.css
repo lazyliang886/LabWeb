@@ -1,19 +1,17 @@
 .allfoot{
     width:190vh;
-    height:13.6vh
+    height:13vh
     margin-top:0vh;
-    background-color:pink;
 }
 .foot1{
     width:140vh;
-    height:13.6vh;
-    background-color:green;
+    height:13vh;
     margin-left:25vh;
 }
 .xian3{
-    height:4px;
+    height:8px;
     width:190vh;
-    background-color:red;
+    background-color:#3594B9;
 }
 .xianfoot{
     height:1vh:

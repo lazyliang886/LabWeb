@@ -1,18 +1,17 @@
 .allbody2{
     width:140vh;
     margin-left:25vh;
-    height:195vh;
-    padding-top:1vh;
+    height:203vh;
     background-color:#D2691E
 }
 .xian{
     height:1vh:
     width:138.3vh;
-
+    margin-top:1vh;
 }
 .xian1{
     height:4px;
-    width:138.3vh;
+    width:140vh;
     margin-top:0.3vh;
     background-color:red;
 }
