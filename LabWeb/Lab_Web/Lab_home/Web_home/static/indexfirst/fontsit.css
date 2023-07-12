@@ -1,3 +1,10 @@
 .font1{
-    text-align：center；
+    text-align:center;
+    color:#ffffff;
+    font-size:25px;
+}
+.font2{
+    text-align:center;
+    color:gray;
+    font-size:30px;
 }
