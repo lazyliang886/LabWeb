@@ -11,12 +11,51 @@
 .tou2{
     height: 6vh;
     width:140vh;
-    padding-top: 1vh;
-    background-color: #3594B9
+    padding-top:1vh;
+    background-color: #3594B9;
+}
+.tou21{
+    height: 4vh;
+    width:140vh;
+    background-color: #3594B9;
 }
 .tou3{
-    height: 5vh;
+    line-height: 45px;
+    text-align: center;
+    height: 4vh;
     width: 12vh;
-    display: inline-block;
-    margin-left: 6.5vh;
+    margin-left: 1vh;
+    overflow: hidden;
+    position: relative;
 }
+.tou3:hover{
+    overflow: visible;
+    color: black;
+    cursor: pointer;
+}
+h1:hover{
+    text-shadow:2px 2px 2px #000000;
+}
+.drop{
+    opacity:0.7;
+    text-align: center;
+    width: 100%;
+    line-height: 40px;
+    overflow: hidden;
+}
+.drop:hover{
+    background: #ffffff;
+    cursor: pointer;
+}
+.xuanzekuang{
+    background-color:#ffffff;
+}
+.xuanzekuang:hover{
+    background-color:#3594B9;
+}
+
+
+
+
+
+

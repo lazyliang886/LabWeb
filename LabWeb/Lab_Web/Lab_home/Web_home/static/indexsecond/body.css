@@ -2,7 +2,7 @@
     width:140vh;
     margin-left:25vh;
     height:80vh;
-    background-color:#D2691E
+
 }
 .xian{
     height:1vh:
@@ -13,22 +13,21 @@
     height:4px;
     width:140vh;
     margin-top:0.3vh;
-    background-color:red;
+    background-color:#3594B9;
 }
 .body1{
-    width:30vh;
+    width:28vh;
     height:63vh;
     margin-top:1vh;
-    padding-top: 2vh;
-    display:inline-block;
+    padding-top: 1vh;
 }
 .smallbody11{
-    width: 30vh;
-    height: 5vh;
+    width: 28vh;
+    height: 7vh;
     background-color: pink;
 }
 .smallbody12{
-    width: 30vh;
+    width: 28vh;
     height:56vh;
     margin-top:2vh;
     background-color: pink;
@@ -36,21 +35,20 @@
 .body2{
     width:101.8vh;
     height:67vh;
-    display:inline-block;
-    margin-left: 6vh;
+    margin-left: 8vh;
 
 }
 .smallbody21{
     width: 101.8vh;
     height:8vh;
-    padding-top:2vh;
-
+    padding-top:1vh;
 }
 .smallbody211{
     width:20vh;
     height:4vh;
     float:right;
-    background-color:#A6FFFF;
+    color:gray;
+    font-size:30px;
 }
 .smallbody22{
     width: 101.8vh;
@@ -65,36 +63,42 @@
     width:7vh;
     height:6vh;
     float:left;
-    background-color:blue;
+
 }
 .smallbody2212{
-    width:30vh;
+    width:32vh;
     height:6vh;
-    float:right;
-    background-color: pink;
+    color:#3594B9;
+    font-size:36px;
+    font-weight:bold;
 }
 .smallbody222{
-    width:40vh;
-    height:4px;
+    width:36vh;
+    height:3px;
     margin-top:2px;
-    background-color:red;
+    background-color:#3594B9;
 
 }
 .smallbody223{
-    width:25vh;
-    height:2px;
+    width:24vh;
+    height:3px;
     margin-top:1vh;
-    background-color:red;
+    background-color:#76BBA6;
 }
 .smallbody23{
     width:101.8vh;
     height:40vh;
-    padding-top:9vh;
+    padding-top:4vh;
 }
 .smallbody231{
     width:95vh;
     height:40vh;
-    border:2px solid yellow;
+    border:4px solid #3594B9;
     border-radius:25px ;
-    background-color:yellow;
+}
+.body6{
+    width:140vh;
+    height:80vh;
+    display:flex;
+    flex-direction:row;
 }

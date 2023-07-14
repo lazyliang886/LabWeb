@@ -1,0 +1,42 @@
+<script>
+    var box = document.getElementById('box');
+    var gameTop =document.getElementById('top')
+    var gameList = document.querySelector('ul');
+    var game = document.querySelectorAll('li')
+
+        // 鼠标移入，出现下拉菜单
+    box.onmouseenter = function () {
+        console.log("鼠标移入");
+        gameList.style.display = 'block';
+    }
+        // 鼠标移除，菜单消失
+    box.onmouseleave = function () {
+        gameList.style.display = 'none';
+    }
+
+        // 鼠标移入，背景变色
+        // 事件委托   子事父做
+    gameList.onmouseover = function (e) {
+        console.log("ul移入了");
+
+            // 排他思想
+        if (e.target.nodeName == 'LI') {
+            for (var i = 0; i < game.length; i++) {
+                this.children[i].style.backgroundColor = 'black'
+                console.log("移入了");
+
+            }
+            e.target.style.backgroundColor='pink'
+        }
+    }
+
+        //点击使顶部出现点击的名字
+    gameList.onclick=function(e){
+        if (e.target.nodeName == 'LI') {
+            gameTop.innerHTML =e.target.innerHTML
+        }
+    }
+
+
+
+    </script>
