@@ -1,19 +1,16 @@
 .allfoot{
-    width:190vh;
-    height:13vh
-    margin-top:0vh;
+    width:1448px;
+    margin: 0 auto;
 }
 .centerfoot{
-    width:140vh;
-    height:13vh;
-    margin-left:25vh;
+    width:1448px;
 }
 .xian3{
     height:8px;
-    width:190vh;
+    width:100%;
     background-color:#3594B9;
 }
 .xianfoot{
-    height:1vh:
-    width:190vh;
+    height:10px:
+    width:100%;
 }

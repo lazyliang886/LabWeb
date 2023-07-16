@@ -1,147 +1,145 @@
 .allbody{
-    width:140vh;
-    margin-left:25vh;
-    height:80vh;
+    width:1448px;
+    margin : 0 auto;
+    height:800px;
 }
 .xian{
-    margin-top:1vh;
-    height:1vh:
-    width:140vh;
-
+    margin-top:10px;
+    height:10px:
 }
 .xian1{
     height:4px;
-    width:140vh;
-    margin-top:0.3vh;
+    width:1448px;
+    margin-top:3px;
     background-color: #3594B9;
 }
 .body1{
-    width:65vh;
-    height:28vh;
+    width:650px;
+    height:280px;
     border:4px solid #3594B9;
     border-radius:25px ;
-    margin-top:1vh;
-    margin-left:1.5vh;
+    margin-top:10px;
+    margin-left:15px;
     display:inline-block;
 }
 .body2{
-    width:65vh;
-    height:28vh;
-    margin-top:1vh;
-    margin-left:5vh;
+    width:650px;
+    height:280px;
+    margin-top:10px;
+    margin-left:50px;
     border:4px solid #3594B9;
     display:inline-block;
     border-radius:25px ;
 }
 
 .xiankuang{
-    height:3vh:
-    width:140vh;
-    margin-top:1vh;
+    height:30px:
+    width:1400px;
+    margin-top:10px;
 }
 .xian2{
-    height:2px;
-    width:100vh;
-    margin-top:5px;
+    height:10px;
+    width:1200px;
+    margin-top:15px;
     background-color:#3594B9;
 }
 
 .body3{
-    width:65vh;
-    height:35vh;
-    margin-top:1vh;
-    margin-left:1.5vh;
+    width:650px;
+    height:350px;
+    margin-top:10px;
+    margin-left:15px;
     border:4px solid #3594B9;
     border-radius: 25px;
 
 }
 .body333{
-    height:18vh;
-    width:65vh;
+    height:180px;
+    width:650px;
     display:flex;
     flex-direction:row;
 }
 .body31{
-    height:17.2vh;
-    width:32vh;
-    margin-top:-1vh;
-    margin-left:-4vh;
+    height:172px;
+    width:320px;
+    margin-top:-10px;
+    margin-left:-40px;
 }
 .body3333{
-    height:16.8vh;
-    width:34vh;
-    margin-top:1vh;
-    margin-left:1vh;
+    height:168px;
+    width:340px;
+    margin-top:10px;
+    margin-left:10px;
 
 }
 .body32{
-    height:15.8vh;
-    width:61vh;
-    margin-left:2vh;
+    height:158px;
+    width:610px;
+    margin-left:20px;
 
 }
 .bodykuang{
-    width:65vh;
-    height:35vh;
-    margin-top:1vh;
-    margin-left:5vh;
+    width:650px;
+    height:350px;
+    margin-top:10px;
+    margin-left:50px;
     display
 }
 .body4{
-    width:65vh;
-    height:16vh;
+    width:650px;
+    height:160px;
     border:4px solid #3594B9;
     border-radius:25px ;
 }
 .body41{
-    height:9vh;
-    width:20vh;
-    margin-top:-0.9vh;
-    margin-left:-2vh;
+    height:90px;
+    width:200px;
+    margin-top:-9px;
+    margin-left:-20px;
 
 }
 .body42,.body52{
-    height:5vh;
-    width:61vh;
-    margin-left:2vh;
+    height:50px;
+    width:610px;
+    margin-left:20px;
 
 }
 .body5{
-    width:65vh;
-    height:16vh;
-    margin-top:3vh;
+    width:650px;
+    height:160px;
+    margin-top:30px;
     border:4px solid #3594B9;
     border-radius:25px;
 }
 .body51{
-    height:9.5vh;
-    width:17vh;
-    margin-top:-0.9vh;
-    margin-left:-2vh;
+    height:95px;
+    width:170px;
+    margin-top:-9px;
+    margin-left:-20px;
 }
 .body6{
-    height:35vh;
+    height:350px;
     display:flex;
     flex-direction:row;
-    width:140vh;
+    width:1400px;
 }
 .body444,.body555{
-    height:9vh;
-    width:65vh;
+    height:90px;
+    width:650px;
     display:flex;
     flex-direction:row;
 }
 .body4444{
-    height:7vh;
-    width:40vh;
-    margin-top:1vh;
-    margin-left:5vh;
+    height:70px;
+    width:400px;
+    margin-top:10px;
+    margin-left:50px;
 
 }
 .body5555{
-    height:7vh;
-    width:44vh;
-    margin-top:1vh;
-    margin-left:4vh;
+    height:70px;
+    width:440px;
+    margin-top:10px;
+    margin-left:40px;
 }
 
