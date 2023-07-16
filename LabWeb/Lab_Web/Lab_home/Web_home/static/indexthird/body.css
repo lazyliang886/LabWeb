@@ -1,156 +1,152 @@
 .allbody2{
-    width:140vh;
-    margin-left:25vh;
-    height:202vh;
-
+    width:1448px;
+    margin: 0 auto;
 }
 .xian{
-    height:1vh:
-    width:138.3vh;
-    margin-top:1vh;
+    height:10px:
+    width:1383px;
+    margin-top:10px;
 }
 .xian1{
     height:4px;
-    width:140vh;
-    margin-top:0.3vh;
+    width:1448px;
+    margin-top:3px;
     background-color:red;
 }
 .body1{
-    width:28vh;
-    height:63vh;
-    margin-top:1vh;
-    padding-top: 2vh;
+    width:280px;
+    height:630px;
+    margin-top:10px;
+    padding-top: 20px;
 
 }
 .smallbody11{
-    width: 28vh;
-    height: 7vh;
+    width: 280px;
 }
 .smallbody12{
-    width: 28vh;
-    height:56vh;
-    margin-top:2vh;
+    width: 280px;
+    height:560px;
+    margin-top:20px;
     background-color: pink;
 }
 .body2{
-    width:101.8vh;
-    height:190.1vh;
-    margin-left: 8vh;
+    width:1018px;
+    height:1901px;
+    margin-left: 80px;
 }
 .smallbody21{
-    width: 101.8vh;
-    height:8vh;
-    padding-top:2vh;
+    width: 1018px;
+    height:80px;
+    padding-top:20px;
 
 }
 .smallbody211{
-    width:20vh;
-    height:4vh;
+    width:200px;
+    height:40px;
     color:gray;
     font-size:30px;
     float:right;
 }
 .smallbody22{
-    width: 101.8vh;
-    height:8vh;
+    width: 1018px;
+    height:80px;
 }
 .smallbody22xiu{
-    width: 101.8vh;
-    height:8vh;
-    margin-top:1vh;
+    width: 1018px;
+    height:80px;
+    margin-top:10px;
 }
 .smallbody22xiu1{
-    width: 101.8vh;
-    height:8vh;
-    margin-top:2vh;
+    width: 1018px;
+    height:80px;
+    margin-top:20px;
 }
 .smallbody221{
-    width:40vh;
-    height:6vh;
+    width:400px;
 }
 .smallbody2211{
-    width:7vh;
-    height:6vh;
+    width:70px;
+    height:60px;
     float:left;
 }
 .smallbody2212{
-    width:32vh;
-    height:6vh;
+    width:320px;
+    height:60px;
     color:#3594B9;
     font-size:36px;
     font-weight:bold;
 }
 .smallbody222{
-    width:36vh;
+    width:360px;
     height:3px;
     margin-top:2px;
     background-color:#3594B9;
 
 }
 .smallbody223{
-    width:24vh;
+    width:240px;
     height:3px;
-    margin-top:1vh;
+    margin-top:10px;
     background-color:#76BBA6;
 }
 .smallbody23{
-    width:101.8vh;
-    height:20vh;
-    padding-top:1vh;
+    width:1018px;
+    height:200px;
+    padding-top:10px;
 }
 .smallbody231{
-    width:95vh;
-    height:20vh;
-    margin-top:1vh;
+    width:950px;
+    height:200px;
+    margin-top:10px;
     border:4px solid #3594B9;
     border-radius:25px ;
 }
 .body3{
-    margin-top:3vh;
-    width:101.8vh;
-    height:149vh;
+    margin-top:30px;
+    width:1018px;
+    height:1490px;
 
-    padding-top:3vh;
+    padding-top:30px;
     background-color: #8A2BE2;
 }
 .body31{
-    margin-top:1vh;
-    width:20vh;
-    height:28vh;
+    margin-top:10px;
+    width:200px;
+    height:280px;
 }
 .body311{
-    width:20vh;
-    height:20vh;
+    width:200px;
+    height:200px;
     border-radius:100px ;
     border:1px solid pink;
     background-color:pink;
 }
 .body312{
-    width:20vh;
-    height:7vh;
+    width:200px;
+    height:70px;
     border:1px solid pink;
     background-color:pink;
 }
 .body4{
-    width:101.8vh;
-    height:28vh;
+    width:1018px;
+    height:280px;
     display:flex;
     flex-direction:row;
 }
 .body41{
-    margin-top:1vh;
-    width:20vh;
-    height:28vh;
+    margin-top:10px;
+    width:200px;
+    height:280px;
 }
 .body42{
-    margin-top:1vh;
-    margin-left:7vh;
-    width:20vh;
-    height:28vh;
+    margin-top:10px;
+    margin-left:70px;
+    width:200px;
+    height:280px;
 }
 .body6{
-    width:140vh;
-    height:195vh;
+    width:1448px;
+    height:1950px;
     display:flex;
     flex-direction:row;
 }
