@@ -1,0 +1,153 @@
+.allbody{
+    width:1448px;
+    margin : 0 auto;
+    height:900px;
+}
+.xian{
+    margin-top:10px;
+    height:10px:
+}
+.xian1{
+    height:4px;
+    width:1448px;
+    margin-top:3px;
+    background-color: #3594B9;
+}
+.body0{
+    width:1448px;
+    height:380px;
+    margin-top:10px;
+    display:flex;
+    flex-direction:row;
+}
+.body1{
+    position: relative;
+    overflow: hidden;
+    width:650px;
+    height:365px;
+    border:4px solid #3594B9;
+    border-radius:25px ;
+    margin-left:30px;
+}
+.body2{
+    width:650px;
+    height:365px;
+    margin-left: 50px;
+    border:4px solid #3594B9;
+    display:flex;
+    flex-direction:row;
+    border-radius:25px ;
+}
+
+.xiankuang{
+    height:30px:
+    width:1400px;
+    margin-top:10px;
+}
+.xian2{
+    height:3px;
+    width:1200px;
+    margin-top:10px;
+    background-color:#76BBA6;
+}
+
+.body3{
+    width:650px;
+    height:350px;
+    margin-top:10px;
+    margin-left:30px;
+    border:4px solid #3594B9;
+    border-radius: 25px;
+
+}
+.body333{
+    height:180px;
+    width:650px;
+    display:flex;
+    flex-direction:row;
+}
+.body31{
+    height:172px;
+    width:320px;
+    margin-top:-10px;
+    margin-left:-40px;
+}
+.body3333{
+    height:168px;
+    width:340px;
+    margin-top:10px;
+    margin-left:10px;
+
+}
+.body32{
+    height:158px;
+    width:610px;
+    margin-left:20px;
+
+}
+.bodykuang{
+    width:650px;
+    height:350px;
+    margin-top:10px;
+    margin-left:50px;
+    display
+}
+.body4{
+    width:650px;
+    height:160px;
+    border:4px solid #3594B9;
+    border-radius:25px ;
+}
+.body41{
+    height:90px;
+    width:200px;
+    margin-top:-9px;
+    margin-left:-20px;
+
+}
+.body42,.body52{
+    height:50px;
+    width:610px;
+    margin-left:20px;
+
+}
+.body5{
+    width:650px;
+    height:160px;
+    margin-top:30px;
+    border:4px solid #3594B9;
+    border-radius:25px;
+}
+.body51{
+    height:95px;
+    width:170px;
+    margin-top:-8px;
+    margin-left:-20px;
+}
+.body6{
+    height:390px;
+    display:flex;
+    flex-direction:row;
+    width:1400px;
+    margin-top:10px;
+}
+.body444,.body555{
+    height:90px;
+    width:650px;
+    display:flex;
+    flex-direction:row;
+}
+.body4444{
+    height:70px;
+    width:400px;
+    margin-top:10px;
+    margin-left:50px;
+
+}
+.body5555{
+    height:70px;
+    width:440px;
+    margin-top:10px;
+    margin-left:40px;
+}
+
