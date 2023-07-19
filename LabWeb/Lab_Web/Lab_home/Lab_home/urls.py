@@ -21,5 +21,7 @@ from Web_home import views
 urlpatterns = [
     # path('admin/', admin.site.urls),
     path('index/', views.index),
-    path('admin/',views.admin)
+    path('admin/',views.admin),
+    path('research/',views.research_dir),
+    path('team/',views.team_t_s)
 ]
