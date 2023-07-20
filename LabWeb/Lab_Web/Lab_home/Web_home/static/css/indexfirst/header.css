@@ -9,11 +9,13 @@
     background-color: #3594B9;
 }
 .tou3{
-    height: 40px;
-    width: 120px;
+    height: 53px;
+    width: 160px;
     margin-left: 34px;
-    position: relative;
-    display: inline-block
+    line-height:10px;
+    overflow: hidden;
+
+    display:inline-block;
 }
 .tou3:hover{
     overflow: visible;
