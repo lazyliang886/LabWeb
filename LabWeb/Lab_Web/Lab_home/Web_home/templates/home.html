@@ -1,16 +1,17 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Wed</title>
     <link rel="stylesheet" href="../static/css/indexfirst/main.css">
-    <link rel="stylesheet" href="../static/css/indexfirst/header.css">
+    <link rel="stylesheet" href="../static/css/indexfirst/test.css">
     <link rel="stylesheet" href="../static/css/indexfirst/body.css">
     <link rel="stylesheet" href="../static/css/indexfirst/foot.css">
     <link rel="stylesheet" href="../static/css/indexfirst/fontsit.css">
 
     <link rel="stylesheet" href="../static/css/lunpan/imagelunpanb.css">
-    <link rel="stylesheet" href="./static/plug-in/bootstrap-3.4.1/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/plug-in/bootstrap-3.4.1/css/bootstrap.css">
 <!--    <link rel="stylesheet" href="../static/jiagou.css">-->
 <!--    <link rel="stylesheet" href="../static/toubei.css">-->
 </head>
@@ -23,170 +24,195 @@
         <!--身体框架-->
         <div class="allbody">
             <div class="tou2">
-                <table class="tou21">
-                    <tbody>
-                        <tr>
-                            <td>
-                                <table class="tou3">
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="tou3">
-                                                    <a href="/index/" style="text-decoration:none" >
-                                                        <h1 class="font1" align="center">首页</h1>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </td>
-                            <td>
-                                <table class="tou3">
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="tou3">
-                                                    <a href="/research/" style="text-decoration:none" action="/admin/">
-                                                        <h1 class="font1" align="center">研究方向</h1>
-                                                    </a>
-                                                </div>
+                <tr>
+                    <td>
+                        <a href="/home/" style="text-decoration:none" class="tou3">
+                            <h1 class="font1" align="center">首页</h1>
+                        </a>
+                        <a href="/research/" style="text-decoration:none" class="tou3">
+                            <h1 class="font1" align="center">研究方向</h1>
+                        </a>
+                        <a href="/team/" style="text-decoration:none" class="tou3">
+                            <h1 class="font1" align="center">师生队伍</h1>
+                        </a>
+                        <a href="/thesis/" style="text-decoration:none" class="tou3">
+                            <h1 class="font1" align="center">学术成果</h1>
+                        </a>
+                        <a href="/train/" style="text-decoration:none" class="tou3">
+                            <h1 class="font1" align="center">人才培养</h1>
+                        </a>
+                        <a href="bing.com" style="text-decoration:none" class="tou3">
+                            <h1 class="font1" align="center">新闻动态</h1>
+                        </a>
+                        <a href="bing.com" style="text-decoration:none" class="tou3">
+                            <h1 class="font1" align="center">联系我们</h1>
+                        </a>
+                    </td>
+                </tr>
+<!--                <table class="tou21">-->
+<!--                    <tbody>-->
+<!--                        <tr>-->
+<!--                            <td>-->
+<!--                                <table class="tou3">-->
+<!--                                    <tbody>-->
+<!--                                        <tr>-->
+<!--                                            <td>-->
+<!--                                                <div class="tou3">-->
+<!--                                                    <a href="/home/" style="text-decoration:none" >-->
+<!--                                                        <h1 class="font1" align="center">首页</h1>-->
+<!--                                                    </a>-->
+<!--                                                </div>-->
+<!--                                            </td>-->
+<!--                                        </tr>-->
+<!--                                    </tbody>-->
+<!--                                </table>-->
+<!--                            </td>-->
+<!--                            <td>-->
+<!--                                <table class="tou3">-->
+<!--                                    <tbody>-->
+<!--                                        <tr>-->
+<!--                                            <td>-->
+<!--                                                <div class="tou3">-->
+<!--                                                    <a href="/research/" style="text-decoration:none" action="/admin/">-->
+<!--                                                        <h1 class="font1" align="center">研究方向</h1>-->
+<!--                                                    </a>-->
+<!--                                                </div>-->
 
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </td>
-                            <td>
-                                <table class="tou3">
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="tou3">
-                                                    <a href="/team/" style="text-decoration:none" >
-                                                        <h1 class="font1" align="center">师生队伍</h1>
-                                                    </a>
-                                                </div>
+<!--                                            </td>-->
+<!--                                        </tr>-->
+<!--                                    </tbody>-->
+<!--                                </table>-->
+<!--                            </td>-->
+<!--                            <td>-->
+<!--                                <table class="tou3">-->
+<!--                                    <tbody>-->
+<!--                                        <tr>-->
+<!--                                            <td>-->
+<!--                                                <div class="tou3">-->
+<!--                                                    <a href="/team/" style="text-decoration:none" >-->
+<!--                                                        <h1 class="font1" align="center">师生队伍</h1>-->
+<!--                                                    </a>-->
+<!--                                                </div>-->
 
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </td>
-                            <td>
-                                <table class="tou3">
-                                    <tbody>
-                                        <tr>
-                                            <td align="center">
-                                                <div class="tou3">
-                                                    <a href="bing.com" style="text-decoration:none">
-                                                        <h1 class="font1" align="center">学术成果</h1>
-                                                    </a>
-                                                    <!--两种方式-->
-                                                    <!--第一种ul方式-->
-                                                    <div class="drop">
-                                                        <ul>
-                                                            <li class="xuanzekuang">
-                                                                <a href="bing.com" style="text-decoration:none">-->
-                                                                    <span style="color:#000000;font-size:10px;">论文</span>
-                                                                </a>
-                                                            </li>
-                                                            <li class="xuanzekuang">
-                                                                <a href="bing.com" style="text-decoration:none">-->
-                                                                    <span style="color:#000000;font-size:10px;">项目</span>
-                                                                </a>
-                                                            </li>
-                                                            <li class="xuanzekuang">
-                                                                <a href="bing.com" style="text-decoration:none">-->
-                                                                    <span style="color:#000000;font-size:10px;">专利</span>
-                                                                </a>
-                                                            </li>
-                                                            <li class="xuanzekuang">
-                                                                <a href="bing.com" style="text-decoration:none">-->
-                                                                    <span style="color:#000000;font-size:10px;">著作</span>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-<!--                                                    第二种div方式-->
+<!--                                            </td>-->
+<!--                                        </tr>-->
+<!--                                    </tbody>-->
+<!--                                </table>-->
+<!--                            </td>-->
+<!--                            <td>-->
+<!--                                <table class="tou3">-->
+<!--                                    <tbody>-->
+<!--                                        <tr>-->
+<!--                                            <td align="center">-->
+<!--                                                <div class="tou3">-->
+<!--                                                    <a href="/thesis/" style="text-decoration:none">-->
+<!--                                                        <h1 class="font1" align="center">学术成果</h1>-->
+<!--                                                    </a>-->
+<!--                                                    &lt;!&ndash;两种方式&ndash;&gt;-->
+<!--                                                    &lt;!&ndash;第一种ul方式&ndash;&gt;-->
 <!--                                                    <div class="drop">-->
-<!--                                                        <a href="bing.com" style="text-decoration:none">-->
-<!--                                                            <span style="color:#ffffff;font-size:20px;">论文</span>-->
-<!--                                                        </a>-->
+<!--                                                        <ul>-->
+<!--                                                            <li class="xuanzekuang">-->
+<!--                                                                <a href="/thesis/" style="text-decoration:none">&ndash;&gt;-->
+<!--                                                                    <span style="color:#000000;font-size:10px;">论文</span>-->
+<!--                                                                </a>-->
+<!--                                                            </li>-->
+<!--                                                            <li class="xuanzekuang">-->
+<!--                                                                <a href="bing.com" style="text-decoration:none">&ndash;&gt;-->
+<!--                                                                    <span style="color:#000000;font-size:10px;">项目</span>-->
+<!--                                                                </a>-->
+<!--                                                            </li>-->
+<!--                                                            <li class="xuanzekuang">-->
+<!--                                                                <a href="bing.com" style="text-decoration:none">&ndash;&gt;-->
+<!--                                                                    <span style="color:#000000;font-size:10px;">专利</span>-->
+<!--                                                                </a>-->
+<!--                                                            </li>-->
+<!--                                                            <li class="xuanzekuang">-->
+<!--                                                                <a href="bing.com" style="text-decoration:none">&ndash;&gt;-->
+<!--                                                                    <span style="color:#000000;font-size:10px;">著作</span>-->
+<!--                                                                </a>-->
+<!--                                                            </li>-->
+<!--                                                        </ul>-->
 <!--                                                    </div>-->
-<!--                                                    <div class="drop">-->
-<!--                                                        <a href="bing.com" style="text-decoration:none">-->
-<!--                                                            <span style="color:#ffffff;font-size:20px;">项目</span>-->
-<!--                                                        </a>-->
-<!--                                                    </div>-->
-<!--                                                    <div class="drop">-->
-<!--                                                        <a href="bing.com" style="text-decoration:none">-->
-<!--                                                            <span style="color:#ffffff;font-size:20px;">专利</span>-->
-<!--                                                        </a>-->
-<!--                                                    </div>-->
-<!--                                                    <div class="drop">-->
-<!--                                                        <a href="bing.com" style="text-decoration:none">-->
-<!--                                                            <span style="color:#ffffff;font-size:20px;">著作</span>-->
-<!--                                                        </a>-->
-<!--                                                    </div>-->
-                                                </div>
+<!--&lt;!&ndash;                                                    第二种div方式&ndash;&gt;-->
+<!--&lt;!&ndash;                                                    <div class="drop">&ndash;&gt;-->
+<!--&lt;!&ndash;                                                        <a href="bing.com" style="text-decoration:none">&ndash;&gt;-->
+<!--&lt;!&ndash;                                                            <span style="color:#ffffff;font-size:20px;">论文</span>&ndash;&gt;-->
+<!--&lt;!&ndash;                                                        </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                                                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                                    <div class="drop">&ndash;&gt;-->
+<!--&lt;!&ndash;                                                        <a href="bing.com" style="text-decoration:none">&ndash;&gt;-->
+<!--&lt;!&ndash;                                                            <span style="color:#ffffff;font-size:20px;">项目</span>&ndash;&gt;-->
+<!--&lt;!&ndash;                                                        </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                                                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                                    <div class="drop">&ndash;&gt;-->
+<!--&lt;!&ndash;                                                        <a href="bing.com" style="text-decoration:none">&ndash;&gt;-->
+<!--&lt;!&ndash;                                                            <span style="color:#ffffff;font-size:20px;">专利</span>&ndash;&gt;-->
+<!--&lt;!&ndash;                                                        </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                                                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                                    <div class="drop">&ndash;&gt;-->
+<!--&lt;!&ndash;                                                        <a href="bing.com" style="text-decoration:none">&ndash;&gt;-->
+<!--&lt;!&ndash;                                                            <span style="color:#ffffff;font-size:20px;">著作</span>&ndash;&gt;-->
+<!--&lt;!&ndash;                                                        </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                                                    </div>&ndash;&gt;-->
+<!--                                                </div>-->
 
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </td>
-                            <td>
-                                <table class="tou3">
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="tou3">
-                                                    <a href="bing.com" style="text-decoration:none" >
-                                                        <h1 class="font1" align="center">人才培养</h1>
-                                                    </a>
-                                                </div>
+<!--                                            </td>-->
+<!--                                        </tr>-->
+<!--                                    </tbody>-->
+<!--                                </table>-->
+<!--                            </td>-->
+<!--                            <td>-->
+<!--                                <table class="tou3">-->
+<!--                                    <tbody>-->
+<!--                                        <tr>-->
+<!--                                            <td>-->
+<!--                                                <div class="tou3">-->
+<!--                                                    <a href="/train/" style="text-decoration:none" >-->
+<!--                                                        <h1 class="font1" align="center">人才培养</h1>-->
+<!--                                                    </a>-->
+<!--                                                </div>-->
 
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </td>
-                            <td>
-                                <table class="tou3">
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="tou3">
-                                                    <a href="bing.com" style="text-decoration:none" >
-                                                        <h1 class="font1" align="center">新闻动态</h1>
-                                                    </a>
-                                                </div>
+<!--                                            </td>-->
+<!--                                        </tr>-->
+<!--                                    </tbody>-->
+<!--                                </table>-->
+<!--                            </td>-->
+<!--                            <td>-->
+<!--                                <table class="tou3">-->
+<!--                                    <tbody>-->
+<!--                                        <tr>-->
+<!--                                            <td>-->
+<!--                                                <div class="tou3">-->
+<!--                                                    <a href="bing.com" style="text-decoration:none" >-->
+<!--                                                        <h1 class="font1" align="center">新闻动态</h1>-->
+<!--                                                    </a>-->
+<!--                                                </div>-->
 
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </td>
-                            <td>
-                                <table class="tou3">
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="tou3">
-                                                    <a href="bing.com" style="text-decoration:none" >
-                                                        <h1 class="font1" align="center">联系我们</h1>
-                                                    </a>
-                                                </div>
+<!--                                            </td>-->
+<!--                                        </tr>-->
+<!--                                    </tbody>-->
+<!--                                </table>-->
+<!--                            </td>-->
+<!--                            <td>-->
+<!--                                <table class="tou3">-->
+<!--                                    <tbody>-->
+<!--                                        <tr>-->
+<!--                                            <td>-->
+<!--                                                <div class="tou3">-->
+<!--                                                    <a href="bing.com" style="text-decoration:none" >-->
+<!--                                                        <h1 class="font1" align="center">联系我们</h1>-->
+<!--                                                    </a>-->
+<!--                                                </div>-->
 
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+<!--                                            </td>-->
+<!--                                        </tr>-->
+<!--                                    </tbody>-->
+<!--                                </table>-->
+<!--                            </td>-->
+<!--                        </tr>-->
+<!--                    </tbody>-->
+<!--                </table>-->
             </div>
             <!--线框框架-->
             <div class="xian">

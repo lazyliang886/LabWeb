@@ -20,8 +20,10 @@ from Web_home import views
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
-    path('index/', views.index),
+    path('home/', views.home),
     path('admin/',views.admin),
     path('research/',views.research_dir),
-    path('team/',views.team_t_s)
+    path('team/',views.team_t_s),
+    path('thesis/',views.thesis),
+    path('train/', views.personnel_training)
 ]

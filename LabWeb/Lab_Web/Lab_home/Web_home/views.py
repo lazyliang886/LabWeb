@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 # Create your views here.
-def index(request):
+def home(request):
     return render(request, 'home.html')
 
 def admin(request):
@@ -12,3 +12,9 @@ def research_dir(request):
 
 def team_t_s(request):
     return render(request, 'team_t_s.html')
+
+def thesis(request):
+    return render(request, 'thesis.html')
+
+def personnel_training(request):
+    return render(request, 'train.html')
