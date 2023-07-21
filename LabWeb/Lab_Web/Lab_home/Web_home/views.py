@@ -18,3 +18,18 @@ def thesis(request):
 
 def personnel_training(request):
     return render(request, 'train.html')
+
+def news(request):
+    return render(request, 'news.html')
+
+def project(request):
+    return render(request, 'project.html')
+
+def patents(request):
+    return render(request, 'patents.html')
+
+def writings(request):
+    return render(request, 'writings.html')
+
+def call_us(request):
+    return render(request, 'call_us.html')
