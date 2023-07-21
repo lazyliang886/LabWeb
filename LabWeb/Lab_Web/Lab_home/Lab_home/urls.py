@@ -25,5 +25,11 @@ urlpatterns = [
     path('research/',views.research_dir),
     path('team/',views.team_t_s),
     path('thesis/',views.thesis),
-    path('train/', views.personnel_training)
+    path('train/', views.personnel_training),
+    path('news/', views.news),
+    path('project/', views.project),
+    path('patents/', views.patents),
+    path('writings/', views.writings),
+    path('call_us/', views.call_us)
+
 ]
