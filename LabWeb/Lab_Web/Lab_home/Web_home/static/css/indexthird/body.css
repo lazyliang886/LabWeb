@@ -1,41 +1,41 @@
 .allbody2{
-    width:1448px;
+    width:1244px;
     margin: 0 auto;
 }
 .xian{
     height:10px:
-    width:1448px;
+    width:1244px;
     margin-top:10px;
 }
 .xian1{
     height:4px;
-    width:1448px;
+    width:1244px;
     margin-top:3px;
     background-color:#3594B9;
 }
 .body1{
-    width:280px;
+    width:200px;
     height:630px;
     margin-top:10px;
     padding-top: 10px;
 
 }
 .smallbody11{
-    width: 280px;
+    width: 200px;
 }
 .smallbody12{
-    width: 280px;
+    width: 200px;
     height:560px;
     margin-top:20px;
     background-color: pink;
 }
 .body2{
-    width:1018px;
-    height:1901px;
+    width:965px;
+    height:1700px;
     margin-left: 80px;
 }
 .smallbody21{
-    width: 1018px;
+    width: 965px;
     height:80px;
     padding-top:20px;
 
@@ -48,16 +48,16 @@
     float:right;
 }
 .smallbody22{
-    width: 1018px;
+    width: 965px;
     height:80px;
 }
 .smallbody22xiu{
-    width: 1018px;
+    width: 965px;
     height:80px;
     margin-top:10px;
 }
 .smallbody22xiu1{
-    width: 1018px;
+    width: 965px;
     height:80px;
     margin-top:20px;
 }
@@ -90,7 +90,7 @@
     background-color:#76BBA6;
 }
 .smallbody23{
-    width:1018px;
+    width:965px;
     height:200px;
     padding-top:10px;
 }
@@ -103,57 +103,57 @@
 }
 .body3{
     margin-top:30px;
-    width:1018px;
-    height:1420px;
+    width:965px;
+    height:1320px;
     padding-top:30px;
 
 }
 .jiaoshi{
-    width:200px;
-    height:280px;
+    width:160px;
+    height:230px;
 
     display:flex;
     flex-direction:row;
 }
 .body31{
     margin-top:10px;
-    width:200px;
-    height:280px;
+    width:160px;
+    height:230px;
 }
 .body311{
 
-    width:200px;
-    height:200px;
+    width:160px;
+    height:160px;
     border-radius:100px ;
     border:1px solid pink;
     background-color:pink;
 }
 .body312{
-    width:200px;
-    height:70px;
+    width:160px;
+    height:50px;
     border:1px solid pink;
     background-color:pink;
 }
 .body4{
-    width:1018px;
-    height:280px;
+    width:965px;
+    height:230px;
     display:flex;
     flex-direction:row;
 }
 .body41{
     margin-top:10px;
-    width:200px;
-    height:280px;
+    width:160px;
+    height:230px;
 }
 .body42{
     margin-top:10px;
-    margin-left:70px;
-    width:200px;
-    height:280px;
+    margin-left:100px;
+    width:160px;
+    height:200px;
 }
 .body6{
-    width:1448px;
-    height:1870px;
+    width:1244px;
+    height:1700px;
     display:flex;
     flex-direction:row;
 }
