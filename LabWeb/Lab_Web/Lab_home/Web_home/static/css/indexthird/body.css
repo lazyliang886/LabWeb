@@ -15,17 +15,19 @@
 }
 .body1{
     width:200px;
-    height:630px;
+    height:560px;
     margin-top:10px;
     padding-top: 10px;
 
 }
 .smallbody11{
     width: 200px;
+    height:50px;
+    padding-top:21px;
 }
 .smallbody12{
     width: 200px;
-    height:560px;
+    height:550px;
     margin-top:20px;
     background-color: pink;
 }
@@ -156,4 +158,9 @@
     height:1700px;
     display:flex;
     flex-direction:row;
+}
+.beijing{
+    width:162px;
+    height:25.5px;
+    margin-left:31px;
 }

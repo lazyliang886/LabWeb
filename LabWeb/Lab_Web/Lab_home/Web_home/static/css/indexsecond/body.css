@@ -23,6 +23,8 @@
 }
 .smallbody11{
     width: 200px;
+    height:50px;
+    padding-top:21px;
 }
 .smallbody12{
     width: 200px;
@@ -98,4 +100,9 @@
     height:720px;
     display:flex;
     flex-direction:row;
+}
+.beijing{
+    width:162px;
+    height:25.5px;
+    margin-left:31px;
 }
