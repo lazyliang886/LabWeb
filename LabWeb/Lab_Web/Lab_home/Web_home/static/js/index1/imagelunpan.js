@@ -134,7 +134,7 @@ function zidongbofang(right){
 }
 // 自动轮播
 var timer;
-var time=2000;
+var time=5000;
 function autoPlay() {
 	timer = setInterval(function() {
 		var right;
