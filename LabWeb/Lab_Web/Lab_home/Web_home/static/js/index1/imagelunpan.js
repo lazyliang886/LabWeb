@@ -97,14 +97,48 @@ btnRight.onclick = function() {
 	}
 	imgShow.style.left = right + "px";
 }
-
+function zidongbofang(right){
+    if(right){
+        index++;
+        if(index > 3){  /*第5张向右时，变为第1张*/
+            index = 0;
+        }
+        showRadius();
+        var right;
+        var imgLeft = imgShow.style.left;
+        if(imgLeft === "-1770px") { /*当是第5张时，第1张的位置为0*/
+            right = 0;
+        }
+        else{
+            right = parseInt(imgLeft) - 590; /*由于left为负数，每右移一张减500*/
+        }
+        imgShow.style.left = right + "px";
+    }
+    else
+    {
+        index--;
+        if(index < 0){  /*第1张向左时，变为第5张*/
+            index = 3;
+        }
+        showRadius();
+        var left;
+        var imgLeft = imgShow.style.left;
+        if(imgLeft === "0px") { /*当是第1张时，每张图片左移，移4张图，位置为-(4*500)*/
+            left = -1770;
+        }
+        else{
+            left = parseInt(imgLeft) + 590; /*由于left为负数，每左移一张加500*/
+        }
+        imgShow.style.left = left + "px";
+    }
+}
 // 自动轮播
 var timer;
 function autoPlay() {
 	timer = setInterval(function() {
 		var right;
 		index++;
-        if(index > 3){  /*第5张向右时，变为第1张*/
+        if(index > 3){  /*第4张向右时，变为第1张*/
             index = 0;
         }
         showRadius();
@@ -116,10 +150,8 @@ function autoPlay() {
 			right = parseInt(imgLeft) - 590;
 		}
 		imgShow.style.left = right + "px";
-	} ,5000)
+	} ,2000)
 }
-autoPlay();
-
 for(var i = 0; i < dotLen; i++) {
     /*利用闭包传递索引*/
     (function(i) {
@@ -130,5 +162,17 @@ for(var i = 0; i < dotLen; i++) {
 	        showRadius();
     	}
     })(i);
+}
+var interval = setInterval(() => {
+    zidongbofang(true)
+}, 2000);
+function stop(x){
+    clearInterval(interval);
+}
+function running(){
+    clearInterval(interval);
+    interval = setInterval(() => {
+            zidongbofang(true)
+        }, 2000);
 }
 
