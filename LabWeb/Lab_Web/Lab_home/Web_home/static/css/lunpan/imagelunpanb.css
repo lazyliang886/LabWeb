@@ -15,6 +15,7 @@ a{
 	position: absolute;
 	width: 2360px; /*整个图片层长度：500*5=2500*/
 	height: 360px;
+	transition: all 1s;
 }
 #container .parent li{
 	float: left;
