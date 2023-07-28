@@ -134,6 +134,7 @@ function zidongbofang(right){
 }
 // 自动轮播
 var timer;
+var time=2000;
 function autoPlay() {
 	timer = setInterval(function() {
 		var right;
@@ -150,7 +151,7 @@ function autoPlay() {
 			right = parseInt(imgLeft) - 590;
 		}
 		imgShow.style.left = right + "px";
-	} ,2000)
+	} ,time)
 }
 for(var i = 0; i < dotLen; i++) {
     /*利用闭包传递索引*/
@@ -165,7 +166,7 @@ for(var i = 0; i < dotLen; i++) {
 }
 var interval = setInterval(() => {
     zidongbofang(true)
-}, 2000);
+}, time);
 function stop(x){
     clearInterval(interval);
 }
@@ -173,6 +174,6 @@ function running(){
     clearInterval(interval);
     interval = setInterval(() => {
             zidongbofang(true)
-        }, 2000);
+        }, time);
 }
 
