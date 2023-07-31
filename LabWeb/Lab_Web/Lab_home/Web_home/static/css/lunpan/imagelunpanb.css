@@ -6,6 +6,8 @@ a{
 }
 #container{
 	position: relative;
+	border:4px solid #3594B9;
+	border-radius:25px ;
 	width: 590px;
 	height: 360px;
 	margin: 0px auto;
