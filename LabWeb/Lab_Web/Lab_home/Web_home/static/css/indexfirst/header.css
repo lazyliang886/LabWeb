@@ -27,9 +27,9 @@ h1:hover{
 .drop{
     opacity:0.7;
     text-align: center;
-    width: 80%;
+    width: 60%;
     line-height: 40px;
-    z-index:1;
+    margin-left:30px;
     overflow: hidden;
 }
 .drop:hover{
@@ -37,11 +37,9 @@ h1:hover{
     cursor: pointer;
 }
 .xuanzekuang{
-    z-index:1;
     background-color:#ffffff;
 }
 .xuanzekuang:hover{
-    z-index:1;
     background-color:#3594B9;
 }
 
