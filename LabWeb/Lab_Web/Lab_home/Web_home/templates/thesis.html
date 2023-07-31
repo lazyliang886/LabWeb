@@ -43,7 +43,7 @@
                                         <tr>
                                             <td>
                                                 <div class="tou3">
-                                                    <a href="/research/" style="text-decoration:none" >
+                                                    <a href="/research/" style="text-decoration:none" action="/admin/">
                                                         <h1 class="font1" align="center">研究方向</h1>
                                                     </a>
                                                 </div>
@@ -75,58 +75,10 @@
                                         <tr>
                                             <td align="center">
                                                 <div class="tou3">
-                                                    <a href="/thesis/" style="text-decoration:none">
-                                                        <h1 class="font1" align="center">学术成果</h1>
+                                                    <a href="/train/" style="text-decoration:none">
+                                                        <h1 class="font1" align="center">人才培养</h1>
                                                     </a>
-                                                    <!--两种方式-->
-                                                    <!--第一种ul方式-->
-                                                    <div class="drop">
-                                                        <ul>
-                                                            <li class="xuanzekuang">
-                                                                <a href="/thesis/" style="text-decoration:none">
-                                                                    <span style="color:#000000;font-size:120%;">论文</span>
-                                                                </a>
-                                                            </li>
-                                                            <li class="xuanzekuang">
-                                                                <a href="/project/" style="text-decoration:none">
-                                                                    <span style="color:#000000;font-size:120%;">项目</span>
-                                                                </a>
-                                                            </li>
-                                                            <li class="xuanzekuang">
-                                                                <a href="/patents/" style="text-decoration:none">
-                                                                    <span style="color:#000000;font-size:120%;">专利</span>
-                                                                </a>
-                                                            </li>
-                                                            <li class="xuanzekuang">
-                                                                <a href="/writings/" style="text-decoration:none">
-                                                                    <span style="color:#000000;font-size:120%;">著作</span>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-<!--                                                    第二种div方式-->
-<!--                                                    <div class="drop">-->
-<!--                                                        <a href="bing.com" style="text-decoration:none">-->
-<!--                                                            <span style="color:#ffffff;font-size:20px;">论文</span>-->
-<!--                                                        </a>-->
-<!--                                                    </div>-->
-<!--                                                    <div class="drop">-->
-<!--                                                        <a href="bing.com" style="text-decoration:none">-->
-<!--                                                            <span style="color:#ffffff;font-size:20px;">项目</span>-->
-<!--                                                        </a>-->
-<!--                                                    </div>-->
-<!--                                                    <div class="drop">-->
-<!--                                                        <a href="bing.com" style="text-decoration:none">-->
-<!--                                                            <span style="color:#ffffff;font-size:20px;">专利</span>-->
-<!--                                                        </a>-->
-<!--                                                    </div>-->
-<!--                                                    <div class="drop">-->
-<!--                                                        <a href="bing.com" style="text-decoration:none">-->
-<!--                                                            <span style="color:#ffffff;font-size:20px;">著作</span>-->
-<!--                                                        </a>-->
-<!--                                                    </div>-->
                                                 </div>
-
                                             </td>
                                         </tr>
                                     </tbody>
@@ -138,9 +90,33 @@
                                         <tr>
                                             <td>
                                                 <div class="tou3">
-                                                    <a href="/train/" style="text-decoration:none" >
-                                                        <h1 class="font1" align="center">人才培养</h1>
+                                                    <a href="/thesis/" style="text-decoration:none" >
+                                                        <h1 class="font1" align="center">学术成果</h1>
                                                     </a>
+                                                    <div class="drop">
+                                                        <ul>
+                                                            <li class="xuanzekuang">
+                                                                <a href="/thesis/" style="text-decoration:none;">
+                                                                    <span style="color:#000000;font-size:120%;">论文</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="xuanzekuang">
+                                                                <a href="/project/" style="text-decoration:none;">
+                                                                    <span style="color:#000000;font-size:120%;">项目</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="xuanzekuang">
+                                                                <a href="/patents/" style="text-decoration:none;">
+                                                                    <span style="color:#000000;font-size:120%;">专利</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="xuanzekuang">
+                                                                <a href="/writings/" style="text-decoration:none;">
+                                                                    <span style="color:#000000;font-size:120%;">著作</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
 
                                             </td>
@@ -215,11 +191,7 @@
                         <div class="smallbody223"></div>
                     </div>
                     <div class="smallbody23">
-                        <div class="smallbody231" style="padding:10px 0px 0px 10px">     <!--高度不固定，有多少内容显示多高-->
-                            {% for str in thesis %}               <!--默认列表——样例，可修改-->
-                                <p>{{str}}</p>
-                            {% endfor %}
-                        </div>
+                        <div class="smallbody231"></div>
                     </div>
                 </div>
             </div>
