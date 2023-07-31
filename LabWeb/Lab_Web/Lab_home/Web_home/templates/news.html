@@ -207,7 +207,7 @@
                     <div class="smallbody22">
                        <div class="smallbody221 clearfix"><!-- 清除浮动-->
                             <div class="smallbody2211 clearfix" >
-                                <img src="">
+                                <img src="../static/image/news.png">
                             </div>
                             <div class="smallbody2212" align="center">新闻动态</div>
                         </div>
@@ -215,7 +215,11 @@
                         <div class="smallbody223"></div>
                     </div>
                     <div class="smallbody23">
-                        <div class="smallbody231"></div>
+                        <div class="smallbody231" style="padding:10px 0px 0px 10px">     <!--高度不固定，有多少内容显示多高-->
+                            {% for str in news %}               <!--默认列表——样例，可修改-->
+                                <p>{{str}}</p>
+                            {% endfor %}
+                        </div>          <!--提示{# data{{ data }}#}-->
                         <div aria-label="Page navigation">
                           <ul class="pagination container">
                             <li>
@@ -223,11 +227,7 @@
                                 <span aria-hidden="true">&laquo;</span>
                               </a>
                             </li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
+                              {{page_string}}
                             <li>
                               <a href="#" aria-label="Next">
                                 <span aria-hidden="true">&raquo;</span>
