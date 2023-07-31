@@ -129,7 +129,6 @@ def news(request):
             else:
                 start_page = page-plus
                 end_page = page+plus+1
-
     page_str_list = []
     for i in range(start_page, end_page):
         if i == page:
@@ -139,8 +138,9 @@ def news(request):
         page_str_list.append(temp)
     page_string = mark_safe("".join(page_str_list))
     if request.method == 'GET':
-        news = ['1\n', '2\n']  # 获取当页内容,可以用列表存字符串或者列表里嵌套字典
-        return render(request, 'news.html', {'page_string': page_string})
+        news = []  # 获取当页内容,可以用列表存字符串或者列表里嵌套字典,存取要展示的信息
+        # '< a href = "{}" >{}< / a >'.format(超链接对应地址,内容)
+        return render(request, 'news.html', {'page_string': page_string,'news':news})
 
 
 def project(request):
