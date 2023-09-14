@@ -5,6 +5,7 @@ import os
 
 admin.site.register(LabIntroduction)
 admin.site.register(LabProprietarySystem)
+admin.site.register(Research)
 
 
 class NewsAdmin(admin.ModelAdmin):

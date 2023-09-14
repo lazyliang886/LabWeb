@@ -54,3 +54,7 @@ class Article(models.Model):
 
 class News(Article):
     pass
+
+
+class Research(models.Model):
+    content = MDTextField()
