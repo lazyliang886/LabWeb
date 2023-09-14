@@ -1,0 +1,14 @@
+.font1{
+    text-align:center;
+    color:#ffffff;
+    font-size:150%;
+
+}
+.font1:hover{
+    text-shadow:2px 2px 2px #000000;
+}
+.jieweifont{
+    text-align:center;
+    color:gray;
+    font-size:150%;
+}
