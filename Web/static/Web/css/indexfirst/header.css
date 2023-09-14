@@ -1,0 +1,54 @@
+.tou1{
+    width:1244px;
+    margin: 0 auto;
+}
+.tou2{
+    height: 70px;
+    width:1244px;
+    padding-top:10px;
+    background-color: #3594B9;
+}
+.tou3{
+    height: 53px;
+    width: 160px;
+    margin-left: 10px;
+    line-height:10px;
+    overflow: hidden;
+    display:inline-block;
+}
+.tou3:hover{
+    overflow: visible;
+    color: black;
+    cursor: pointer;
+}
+
+.drop{
+    opacity:0.7;
+    text-align: center;
+    width: 60%;
+    line-height: 40px;
+    margin-left:30px;
+    overflow: hidden;
+}
+.drop:hover{
+    background: #ffffff;
+    cursor: pointer;
+}
+.xuanzekuang{
+    background-color:#ffffff;
+}
+.xuanzekuang:hover{
+    background-color:#3594B9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
