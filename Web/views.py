@@ -1,13 +1,13 @@
 from django.core.paginator import Paginator
 from django.http import HttpResponse, Http404
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import *
 import markdown
 import re
 
 
 def test(request):
-    return render(request, 'test.html')
+    return render(request, 'Web/test.html')
 
 
 def home(request):
@@ -21,25 +21,25 @@ def home(request):
 
     latest_news_list = News.objects.order_by("-pubdate")[:5]
 
-    return render(request, 'home.html', {'img_list': img_list, 'introduction': introduction,
+    return render(request, 'Web/home.html', {'img_list': img_list, 'introduction': introduction,
                                          'LabProprietarySystem_list': LabProprietarySystem_list,
                                          'latest_news_list': latest_news_list})
 
 
 def research_dir(request):
-    return render(request, 'research.html')
+    return render(request, 'Web/research.html')
 
 
 def team_t_s(request):
-    return render(request, 'team_t_s.html')
+    return render(request, 'Web/team_t_s.html')
 
 
 def thesis(request):
-    return render(request, 'thesis.html')
+    return render(request, 'Web/thesis.html')
 
 
 def personnel_training(request):
-    return render(request, 'train.html')
+    return render(request, 'Web/train.html')
 
 
 def news(request):
@@ -49,7 +49,7 @@ def news(request):
 
     if not page_number_raw:
         page_obj = paginator.get_page(1)
-        return render(request, 'news.html', {"news_list": page_obj})
+        return render(request, 'Web/news.html', {"news_list": page_obj})
 
     try:
         page_number = re.match('\\d+', page_number_raw)
@@ -60,33 +60,29 @@ def news(request):
 
         page_obj = paginator.get_page(page_number)
 
-        return render(request, 'news.html', {"news_list": page_obj})
+        return render(request, 'Web/news.html', {"news_list": page_obj})
 
     except (TypeError, AttributeError):
         raise Http404("page not found")
 
 
 def news_detail(request, news_id):
-    try:
-        print(f'news id here {news_id}')
-        news_raw = News.objects.get(pk=news_id)
-        news_markdown = markdown.markdown(news_raw.content, extensions=['markdown.extensions.fenced_code'])
-        return render(request, 'detail.html', {'news': news_markdown})
-    except News.DoesNotExist:
-        return HttpResponse("News not found.")
+    news_raw = get_object_or_404(News, pk=news_id)
+    news_markdown = markdown.markdown(news_raw.content, extensions=['markdown.extensions.fenced_code'])
+    return render(request, 'Web/detail.html', {'news': news_markdown})
 
 
 def project(request):
-    return render(request, 'project.html')
+    return render(request, 'Web/project.html')
 
 
 def patents(request):
-    return render(request, 'patents.html')
+    return render(request, 'Web/patents.html')
 
 
 def writings(request):
-    return render(request, 'writings.html')
+    return render(request, 'Web/writings.html')
 
 
 def contactus(request):
-    return render(request, 'contactus.html')
+    return render(request, 'Web/contactus.html')

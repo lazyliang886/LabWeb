@@ -50,7 +50,6 @@ class Article(models.Model):
     title = models.CharField(max_length=200)
     content = MDTextField()
     pubdate = models.DateTimeField("pubdate", auto_now_add=True)
-    url = models.URLField(max_length=2000)
 
 
 class News(Article):

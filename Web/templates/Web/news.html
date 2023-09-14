@@ -205,7 +205,7 @@
                             {% endfor %} {% endcomment %}
                             {% for news in news_list %}
                                 <p>
-                                    <a href="{{news.url}}">{{news.title}}</a>
+                                    <a href="{% url 'Web:news_detail' news.id %}">{{news.title}}</a>
                                 </p>
                                 
                             {% endfor %}

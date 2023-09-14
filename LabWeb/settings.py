@@ -57,7 +57,7 @@ ROOT_URLCONF = 'LabWeb.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'Web/templates/Web')],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -82,8 +82,8 @@ DATABASES = {
         'HOST': '127.0.0.1',
         'PORT': '3306',
         'NAME': 'LabWeb',
-        'USER': 'user',
-        'PASSWORD': 'password'
+        'USER': '114514',
+        'PASSWORD': '1919810'
 
     }
 }
