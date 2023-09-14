@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Range Example</title>
+</head>
+<body>
+    <form id="number-form">
+        <label for="number-input">请输入指定范围内的数字：</label>
+        <input type="number" id="number-input" name="number" required>
+        <input type="submit" value="提交">
+    </form>
+
+    <script>
+        // 从服务器获取数字范围
+        async function fetchRange() {
+            try {
+                const response = await fetch('http://127.0.0.1:8000/news/page_range');
+                const range = await response.json();
+                const numberInput = document.getElementById('number-input');
+                numberInput.min = range.min;
+                numberInput.max = range.max;
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        fetchRange();
+
+        document.getElementById('number-form').addEventListener('submit', (event) => {
+            event.preventDefault(); // 阻止默认的表单提交行为
+            const numberInput = document.getElementById('number-input');
+            const inputValue = numberInput.value;
+            const min = parseInt(numberInput.min);
+            const max = parseInt(numberInput.max);
+
+            if (inputValue >= min && inputValue <= max) {
+                // 使用 GET 请求向服务器发送请求
+                fetch(`http://127.0.0.1:8000/news?page=${inputValue}`, {
+                    method: 'GET',
+                }).then(response => {
+                    // 处理响应
+                    console.log("request success");
+                }).catch(error => {
+                    // 处理错误
+                    console.error(error);
+                });
+            } else {
+                alert(`请输入范围在 ${min} 到 ${max} 之间的数字`);
+            }
+        });
+    </script>
+</body>
+</html>
