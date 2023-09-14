@@ -7,9 +7,9 @@ from mdeditor.fields import MDTextField
 
 
 class Image(models.Model):
-    img = models.ImageField(upload_to="Web/static/image")
+    img = models.ImageField(upload_to="Web/image")
     upload_time = models.DateTimeField("upload_time", auto_now_add=True)
-    name = models.CharField(max_length=200)
+    alt_name = models.CharField("alt_name", max_length=200)
     url = models.URLField("url(optional)", max_length=200, blank=True)
 
 

@@ -17,7 +17,7 @@ admin.site.register(News, NewsAdmin)
 
 @admin.register(Image)
 class ImageAdmin(admin.ModelAdmin):
-    list_display = ('name', 'thumbnail', 'file_name')
+    list_display = ('alt_name', 'thumbnail')
     readonly_fields = ('thumbnail',)
 
     def thumbnail(self, obj):
@@ -25,15 +25,10 @@ class ImageAdmin(admin.ModelAdmin):
 
     thumbnail.short_description = 'thumbnail'
 
-    def file_name(self, obj):
-        return os.path.basename(obj.img.path)
-
-    file_name.short_description = 'file name'
-
 
 @admin.register(IndexImgCarousel)
 class IndexImgCarouselAdmin(admin.ModelAdmin):
-    list_display = ('name', 'thumbnail', 'show_in_home', 'file_name')
+    list_display = ('alt_name', 'thumbnail', 'show_in_home')
     readonly_fields = ('thumbnail',)  # 必须加这行 否则访问编辑页面会报错
 
     def thumbnail(self, obj):
@@ -45,8 +40,3 @@ class IndexImgCarouselAdmin(admin.ModelAdmin):
         return obj.show_in_home
 
     show_in_home.short_description = 'show in home'
-
-    def file_name(self, obj):
-        return os.path.basename(obj.img.path)
-
-    file_name.short_description = 'file name'
