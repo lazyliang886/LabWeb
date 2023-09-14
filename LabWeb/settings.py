@@ -127,7 +127,7 @@ STATIC_URL = 'static/'
 #     os.path.join(BASE_DIR, "Web/static"),
 # ]
 
-MEDIA_URL = '/media/'
+MEDIA_URL = 'media/'
 MEDIA_ROOT = '/var/www/LabWeb/media/'
 
 # Default primary key field type
