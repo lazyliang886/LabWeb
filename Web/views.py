@@ -11,27 +11,62 @@ def test(request):
 
 
 def home(request):
-    img_list = IndexImgCarousel.objects.all()
+    img_list = IndexImgCarousel.objects.order_by("-upload_time")[:4]
     introduction = LabIntroduction.objects.all()
     if len(introduction) > 0:
         introduction = introduction[0]
     else:
         introduction = '暂时没有简介'
+
+    lead_in = LabLeadIn.objects.all()
+    if len(lead_in) > 0:
+        lead_in = lead_in[0]
+    else:
+        lead_in = '暂时没有简介'
+
     LabProprietarySystem_list = LabProprietarySystem.objects.all()
 
     latest_news_list = News.objects.order_by("-pubdate")[:5]
+    print(latest_news_list)
 
     return render(request, 'Web/home.html', {'img_list': img_list, 'introduction': introduction,
-                                         'LabProprietarySystem_list': LabProprietarySystem_list,
-                                         'latest_news_list': latest_news_list})
+                                             'LabProprietarySystem_list': LabProprietarySystem_list,
+                                             'latest_news_list': latest_news_list,
+                                             'lead_in': lead_in})
 
 
 def research_dir(request):
     return render(request, 'Web/research.html')
 
 
+def handle_team_data(data_all):
+    data_list = []
+    data_temp = []
+
+    for i in data_all:
+        data_temp.append(i)
+        if len(data_temp) == 4:
+            data_list.append(data_temp)
+            data_temp = []
+    if len(data_temp) > 0:
+        data_list.append(data_temp)
+
+    return data_list
+
+
 def team_t_s(request):
-    return render(request, 'Web/team_t_s.html')
+    teacher_list = handle_team_data(Teacher.objects.all())
+    postgraduate_list = handle_team_data(Postgraduate.objects.all())
+    undergraduate_list = handle_team_data(Undergraduate.objects.all())
+
+    for i in teacher_list:
+        for j in i:
+            print(j)
+
+    return render(request, 'Web/team_t_s.html',
+                  {"teacher_list": teacher_list,
+                   "postgraduate_list": postgraduate_list,
+                   "undergraduate_list": undergraduate_list})
 
 
 def thesis(request):

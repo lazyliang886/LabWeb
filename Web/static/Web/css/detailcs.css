@@ -3,3 +3,25 @@
     width:1244px;
     height:720px;
 }
+
+.content > h1,h2,h3,h4,h5{
+    text-align:center;
+}
+
+.body6{
+    width:1244px;
+}
+.content{
+    width:1000px;
+    padding-left: 180px;
+}
+.center_body{
+    width:1244px;
+    margin : 0 auto;
+}
+
+.content > p > img{
+    width: 700px;
+}
+
+    

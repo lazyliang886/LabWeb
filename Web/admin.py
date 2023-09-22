@@ -1,42 +1,72 @@
 from django.contrib import admin
 from django.utils.safestring import mark_safe
 from .models import *
-import os
+
+admin.site.site_title = "智能计算与系统结构实验室"
+admin.site.site_header = "智能计算与系统结构实验室"
 
 admin.site.register(LabIntroduction)
+admin.site.register(LabLeadIn)
 admin.site.register(LabProprietarySystem)
 admin.site.register(Research)
 
 
+class TeacherAdmin(admin.ModelAdmin):
+    list_display = ('name', 'title', 'thumbnail')
+
+    def thumbnail(self, obj):
+        return mark_safe('<img src="%s" width="100px" />' % obj.photo.url)
+
+    thumbnail.short_description = '照片'
+
+
+admin.site.register(Teacher, TeacherAdmin)
+
+
+class PostgraduateAdmin(admin.ModelAdmin):
+    list_display = ('name', 'grade', 'thumbnail')
+
+    def thumbnail(self, obj):
+        return mark_safe('<img src="%s" width="100px" />' % obj.photo.url)
+
+    thumbnail.short_description = '照片'
+
+
+admin.site.register(Postgraduate, PostgraduateAdmin)
+
+
+class UndergraduateAdmin(admin.ModelAdmin):
+    list_display = ('name', 'grade', 'thumbnail')
+
+    def thumbnail(self, obj):
+        return mark_safe('<img src="%s" width="100px" />' % obj.photo.url)
+
+    thumbnail.short_description = '照片'
+
+
+admin.site.register(Undergraduate, UndergraduateAdmin)
+
+
 class NewsAdmin(admin.ModelAdmin):
     list_display = ('title', 'pubdate', 'id')
+    search_fields = ["title", "content"]
 
 
 admin.site.register(News, NewsAdmin)
 
 
-@admin.register(Image)
-class ImageAdmin(admin.ModelAdmin):
-    list_display = ('alt_name', 'thumbnail')
-    readonly_fields = ('thumbnail',)
-
-    def thumbnail(self, obj):
-        return mark_safe('<img src="%s" width="100px" />' % obj.img.url)
-
-    thumbnail.short_description = 'thumbnail'
-
-
-@admin.register(IndexImgCarousel)
 class IndexImgCarouselAdmin(admin.ModelAdmin):
     list_display = ('alt_name', 'thumbnail', 'show_in_home')
-    readonly_fields = ('thumbnail',)  # 必须加这行 否则访问编辑页面会报错
 
     def thumbnail(self, obj):
         return mark_safe('<img src="%s" width="100px" />' % obj.img.url)
 
-    thumbnail.short_description = 'thumbnail'
+    thumbnail.short_description = '缩略图'
 
     def show_in_home(self, obj):
         return obj.show_in_home
 
-    show_in_home.short_description = 'show in home'
+    show_in_home.short_description = '是否展示在首页'
+
+
+admin.site.register(IndexImgCarousel, IndexImgCarouselAdmin)

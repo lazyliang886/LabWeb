@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <title>Web</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'Web/css/indexfirst/main.css' %}">
+    {% comment %} <link rel="stylesheet" href="{% static 'Web/css/indexfirst/main.css' %}">
     <link rel="stylesheet" href="{% static 'Web/css/indexfirst/header.css' %}">
     <link rel="stylesheet" href="{% static 'Web/css/indexfirst/body.css' %}">
     <link rel="stylesheet" href="{% static 'Web/css/indexfirst/foot.css' %}">
-    <link rel="stylesheet" href="{% static 'Web/css/indexfirst/fontsit.css' %}">
+    <link rel="stylesheet" href="{% static 'Web/css/indexfirst/fontsit.css' %}"> {% endcomment %}
+    <link rel="stylesheet" href="{% static 'Web/css_fix/home.css' %}">
     <link rel="stylesheet" href="{% static 'Web/css/lunpan/imagelunpanb.css' %}">
     <link rel="stylesheet" href="{% static 'Web/plug-in/bootstrap-3.4.1/css/bootstrap.css' %}">
 </head>
@@ -176,11 +177,49 @@
                 <div class="body1">
                     <div id="container" onmouseover="stop()" onmouseout="running()">
                         <ul class="parent" style="left: 0;">
+                            {% if img_list|length == 0 %}
+                                <li><img src="{% static 'Web/image/home_1.png' %}" /></li>
+                                <li><img src="{% static 'Web/image/home_2.png' %}" /></li>
+                                <li><img src="{% static 'Web/image/home_3.png' %}" /></li>
+                                <li><img src="{% static 'Web/image/home_4.png' %}" /></li>
+                            {% endif %}
+
+                            {% if img_list|length == 1 %}
+                                {% for img in img_list %}
+                                    {% if img.show_in_home %}
+                                        <li><a href="{{ img.url }}"><img src="{{ img.img.url }}" /></a></li>
+                                    {% endif %}
+                                {% endfor %}
+                                <li><img src="{% static 'Web/image/home_2.png' %}" /></li>
+                                <li><img src="{% static 'Web/image/home_3.png' %}" /></li>
+                                <li><img src="{% static 'Web/image/home_4.png' %}" /></li>
+                            {% endif %}
+
+                            {% if img_list|length == 2 %}
+                                {% for img in img_list %}
+                                    {% if img.show_in_home %}
+                                        <li><a href="{{ img.url }}"><img src="{{ img.img.url }}" /></a></li>
+                                    {% endif %}
+                                {% endfor %}
+                                <li><img src="{% static 'Web/image/home_3.png' %}" /></li>
+                                <li><img src="{% static 'Web/image/home_4.png' %}" /></li>
+                            {% endif %}
+
+                            {% if img_list|length == 3 %}
+                                {% for img in img_list %}
+                                    {% if img.show_in_home %}
+                                        <li><a href="{{ img.url }}"><img src="{{ img.img.url }}" /></a></li>
+                                    {% endif %}
+                                {% endfor %}
+                                <li><img src="{% static 'Web/image/home_4.png' %}" /></li>
+                            {% endif %}
+
                             {% for img in img_list %}
-                                {% if img.show_in_home == True %}
+                                {% if img.show_in_home %}
                                     <li><a href="{{ img.url }}"><img src="{{ img.img.url }}" /></a></li>
                                 {% endif %}
                             {% endfor %}
+                            
                         </ul>
                         <div class="btnLeft">&lt;</div>
                         <div class="btnRight">&gt;</div>
@@ -199,10 +238,7 @@
                 <div class="body2">
                     <!-- 替换文字 -->
                     <div class="body2xiu">
-                        “每一项科学突破都始于一个问题。我们可能无法立即提供所有答案，但也许共享问题并与他人进行对话，是一个很好的起点。”《
-                        科学》
-                        杂志定制出版编辑Jackie Oberst博士说。4月10日下午，上海交通大学携手《科学》杂志发布“新
-                        125个科学问题”——《125个科学问题：探索与发现》。
+                        {{lead_in.lead_in|default:"暂时还没有内容"}}
                     </div>
 
                 </div>
@@ -217,7 +253,7 @@
                         实验室简介
                     </div>
                     <div class="body32">
-                        {{introduction.introduction}}
+                        {{introduction.introduction|default:"暂时还没有内容"}}
                     </div>
                 </div>
                 <div class="bodykuang">
@@ -226,14 +262,14 @@
                             实验室自研系统
                         </div>
                         <div class="body42">
-                            {% comment %} “每一项科学突破都始于一个问题。我们可能无法立即提供所有答案，但也许共享问题并与他人进行对话，是一个很好的起点。”
-                            《科学》
-                            杂志定制出版编辑Jackie Oberst博士说。4月10日下午，上海交通大学携手《科学》杂志发布“新
-                            125个科学问题”——《125个科学问题：探索与发现》。 {% endcomment %}
                             <ul>
-                                {% for sys in LabProprietarySystem_list %}
-                                    <li> {{sys.name}} </li>
-                                {% endfor %}
+                                {% if LabProprietarySystem_list|length == 0 %}
+                                <li>暂时还没有内容</li>
+                                {% else %}
+                                    {% for sys in LabProprietarySystem_list %}
+                                        <li> {{sys.name}} </li>
+                                    {% endfor %}
+                                {% endif %}
                             </ul>
                         </div>
                     </div>
@@ -243,9 +279,13 @@
                         </div>
                         <div class="body52">
                             <ul>
-                                {% for news in latest_news_list %}
-                                    <li><a href="{% url 'Web:news_detail' news.id %}">{{news.title}}</li>
-                                {% endfor %}
+                                {% if latest_news_list|length == 0 %}
+                                    <li>暂时还没有内容</li>
+                                {% else %}
+                                    {% for news in latest_news_list %}
+                                        <li><a href="{% url 'Web:news_detail' news.id %}">{{news.title}}</li>
+                                    {% endfor %}
+                                {% endif %}
                             </ul>
                         </div>
                     </div>

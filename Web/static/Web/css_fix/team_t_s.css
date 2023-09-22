@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.jiagou {
+    width: 100%;
+}
+
+.font1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 150%;
+
+}
+
+.font1:hover {
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.jieweifont {
+    text-align: center;
+    color: gray;
+    font-size: 150%;
+}
+
+.drop {
+    opacity: 0.7;
+    text-align: center;
+    width: 60%;
+    line-height: 40px;
+    margin-left: 30px;
+    overflow: hidden;
+}
+
+.drop:hover {
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.xuanzekuang {
+    background-color: #ffffff;
+}
+
+.xuanzekuang:hover {
+    background-color: #3594B9;
+}
+
+.xian {
+    height: 10px;
+    width: 1244px;
+    margin-top: 10px;
+}
+
+.xian1 {
+    height: 4px;
+    width: 1244px;
+    margin-top: 3px;
+    background-color: #3594B9;
+}
+
+.xian3 {
+    height: 8px;
+    width: 100%;
+    background-color: #3594B9;
+}
+
+.xianfoot {
+    height: 10px;
+    width: 100%;
+}
+
+.allfoot {
+    width: 1244px;
+    margin: 0 auto;
+}
+
+.centerfoot {
+    width: 1244px;
+}
+
+.tou1 {
+    width: 1244px;
+    margin: 0 auto;
+}
+
+.tou2 {
+    height: 70px;
+    width: 1244px;
+    padding-top: 10px;
+    background-color: #3594B9;
+}
+
+.tou3 {
+    height: 53px;
+    width: 160px;
+    margin-left: 10px;
+    line-height: 10px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.tou3:hover {
+    overflow: visible;
+    color: black;
+    cursor: pointer;
+}
+
+.beijing {
+    width: 162px;
+    height: 25.5px;
+    margin-left: 31px;
+}
+
+.allbody2 {
+    width: 1244px;
+    margin: 0 auto;
+}
+
+.body1 {
+    width: 200px;
+    margin-top: 10px;
+    padding-top: 10px;
+
+}
+
+.smallbody11 {
+    width: 200px;
+    height: 50px;
+    padding-top: 21px;
+}
+
+.smallbody12 {
+    width: 200px;
+    height: 550px;
+    margin-top: 20px;
+    background-color: pink;
+}
+
+.body2 {
+    width: 965px;
+    margin-left: 80px;
+}
+
+.smallbody21 {
+    width: 965px;
+    height: 80px;
+    padding-top: 20px;
+
+}
+
+.smallbody211 {
+    width: 200px;
+    height: 40px;
+    color: gray;
+    font-size: 20px;
+    float: right;
+}
+
+.smallbody22 {
+    width: 965px;
+    height: 80px;
+}
+
+.smallbody221 {
+    width: 400px;
+}
+
+.smallbody22xiu {
+    width: 965px;
+    height: 80px;
+    margin-top: 10px;
+}
+
+.smallbody22xiu1 {
+    width: 965px;
+    height: 80px;
+    margin-top: 20px;
+}
+
+.smallbody2211 {
+    width: 70px;
+    height: 60px;
+    float: left;
+}
+
+.smallbody2212 {
+    width: 320px;
+    height: 60px;
+    color: #3594B9;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.smallbody222 {
+    width: 360px;
+    height: 3px;
+    margin-top: 2px;
+    background-color: #3594B9;
+
+}
+
+.smallbody223 {
+    width: 240px;
+    height: 3px;
+    margin-top: 10px;
+    background-color: #76BBA6;
+}
+
+.smallbody23 {
+    width: 965px;
+    padding-top: 10px;
+}
+
+.smallbody231 {
+    width: 950px;
+    margin-top: 10px;
+    border: 4px solid #3594B9;
+    border-radius: 25px;
+}
+
+.smallbody231xiu {
+    width: 920px;
+    margin-left: 15px;
+}
+
+.jiaoshi {
+    width: 160px;
+    height: 230px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.body3 {
+    margin-top: 30px;
+    width: 965px;
+    padding-top: 30px;
+}
+
+
+.body31 {
+    margin-top: 10px;
+    width: 160px;
+    height: 230px;
+}
+
+.body311 {
+    width: 160px;
+    height: 160px;
+    border-radius: 100px;
+    background-color: pink;
+}
+
+.body312 {
+    width: 160px;
+    background-color: pink;
+}
+
+
+.body4 {
+    width: 940px;
+    height: 230px;
+    display: flex;
+    flex-direction: row;
+}
+
+.body41 {
+    margin-top: 10px;
+    width: 160px;
+    height: 230px;
+}
+
+.body42 {
+    margin-top: 10px;
+    margin-left: 100px;
+    width: 160px;
+    height: 230px;
+}
+
+.body6 {
+    width: 1244px;
+    display: flex;
+    flex-direction: row;
+}
